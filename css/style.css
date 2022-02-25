@@ -13,7 +13,7 @@ body {
 /* grid index */
 .gridIndex {
   display: grid;
-  grid-template-areas: "header header" "nav nav" "mainIndex mainIndex" "footer footer";
+  grid-template-areas: "header header" "nav nav" "mainIndex mainIndex" "sectionIndex sectionIndex" "footer footer";
   grid-template-columns: 1fr 1fr;
   height: 100vh; }
 
@@ -60,7 +60,7 @@ header {
   margin-left: 1%;
   margin-right: 1%; }
   .estilosNav .agrandar:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 0.5s; }
 
 /* main index */
@@ -69,13 +69,19 @@ header {
   display: flex;
   justify-content: center; }
   .mainIndex .textoIndex1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
     color: whitesmoke;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif; }
+    font-weight: bolder;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
   .mainIndex .textoIndex2 {
+    font-family: 'Roboto', sans-serif;
     color: whitesmoke;
-    font-family: 'Roboto', sans-serif; }
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
 
 /* main productos */
 .mainProductos {
@@ -289,6 +295,25 @@ header {
 .mainContactoMobile {
   display: none; }
 
+/* Section INDEX */
+.sectionIndex {
+  grid-area: sectionIndex;
+  margin-top: 30px; }
+  .sectionIndex h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px; }
+  .sectionIndex .containerCards {
+    display: flex;
+    justify-content: space-evenly; }
+    .sectionIndex .containerCards div {
+      padding: 7px;
+      background-color: black; }
+      .sectionIndex .containerCards div div p {
+        color: whitesmoke;
+        font-family: 'Roboto', sans-serif; }
+
 /* footer */
 footer {
   grid-area: footer;
@@ -461,3 +486,8 @@ footer {
         width: 100%; }
   footer {
     height: 130px; } }
+
+/* MEDIAQUERIES INDEX */
+@media screen and (max-width: 767px) {
+  .mainIndex {
+    display: none; } }
