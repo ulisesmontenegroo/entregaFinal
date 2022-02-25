@@ -4,14 +4,20 @@
     display: flex;
     justify-content: center;
     .textoIndex1{
-        color: $secundario;
-        font-size: 2em;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 3em;
+      color: $secundario;
+      font-weight: bolder;
+      background-color: $primario;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
     }
     .textoIndex2{
-        color: $secundario;
-        font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      color: $secundario;
+      background-color: $primario;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 }
 /* main productos */
