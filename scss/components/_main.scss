@@ -27,6 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .textoCatalogo{
+      align-self: stretch;
+      margin-left: 1%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+      margin-bottom: 3%;
+    }
     .card-productos{
       background-color: $bg;
       border: $primario 2px solid;

@@ -20,7 +20,7 @@ body {
 /* grid productos */
 .gridProductos {
   display: grid;
-  grid-template-areas: "header header" "nav nav" "mainProductos mainProductos" "footer footer"; }
+  grid-template-areas: "header header" "nav nav" "mainProductos mainProductos" "sectionCatalogo sectionCatalogo" "footer footer"; }
 
 /* grid empresa */
 .gridEmpresa {
@@ -90,6 +90,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .mainProductos .textoCatalogo {
+    align-self: stretch;
+    margin-left: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 3%; }
   .mainProductos .card-productos {
     background-color: #C2B8B7;
     border: black 2px solid;
@@ -313,6 +319,20 @@ header {
       .sectionIndex .containerCards div div p {
         color: whitesmoke;
         font-family: 'Roboto', sans-serif; }
+
+/* section catalogo */
+.sectionCatalogo {
+  grid-area: sectionCatalogo;
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionCatalogo h2 {
+    font-family: 'Roboto', sans-serif; }
+  .sectionCatalogo .marcasContainer {
+    width: 70%; }
+    .sectionCatalogo .marcasContainer .imgMarcas {
+      border-radius: 10px; }
 
 /* footer */
 footer {
