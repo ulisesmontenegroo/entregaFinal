@@ -82,6 +82,17 @@ header{
     height: 100px;
   }
 }
+/* section index */
+.sectionIndex{
+  .containerCards{
+    flex-direction: column;
+    align-items: center;
+    div{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
 /* main empresa */
 .mainEmpresa{
   flex-direction: column;
@@ -157,6 +168,21 @@ header{
       height: 70px;
     }
   }
+  /* main index */
+  .indexIndicadores{
+    display: none;
+  }
+  /* section index */
+.sectionIndex{
+  .containerCards{
+    flex-direction: column;
+    align-items: center;
+    div{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
   /* main empresa */
   .mainEmpresa{
     flex-direction: column;
@@ -226,10 +252,23 @@ header{
      height: 130px;
    }
 }
-
-/* MEDIAQUERIES INDEX */
-@media screen and (max-width: 767px){
-  .mainIndex{
-    display: none;
+/* MEDIAQUERIES DETALLES */
+@media screen and (min-width: 400px) and (max-width: 538px){
+  /* main index */
+  .textoCarousel{
+    h1, h2{
+      display: none;
+    }
+    p{
+      font-size: 1.3em;
+    }
+  }
+}
+/* MEDIAQUERIES DETALLES */
+@media screen and (min-width: 320px) and (max-width: 399px){
+  .textoCarousel{
+    h1, h2{
+      display: none;
+    }
   }
 }
