@@ -92,9 +92,7 @@ header {
   align-items: center; }
   .mainProductos .textoCatalogo {
     align-self: stretch;
-    margin-left: 1%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    margin-left: 2%;
     margin-bottom: 3%; }
   .mainProductos .card-productos {
     background-color: #C2B8B7;
@@ -112,25 +110,26 @@ header {
 .mainEmpresa {
   grid-area: mainEmpresa;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  flex-flow: column wrap; }
   .mainEmpresa #imagenEmpresa {
-    height: 300px;
-    margin-right: 30px; }
+    width: 700px;
+    align-self: center;
+    margin-top: 2%; }
   .mainEmpresa .containerEmpresa {
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
-    width: 700px; }
+    width: 100%;
+    margin-left: 2%; }
     .mainEmpresa .containerEmpresa .tituloEmpresa {
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 7px;
-      border-bottom: 1px solid black; }
+      font-weight: bolder;
+      border-bottom: 1px solid black;
+      width: 96%;
+      margin-bottom: 7px; }
     .mainEmpresa .containerEmpresa .parrafoEmpresa {
       font-family: 'Roboto', sans-serif;
-      color: black; }
+      color: black;
+      padding-right: 20%; }
 
 /* main sucursales */
 .mainSucursales {
@@ -143,12 +142,10 @@ header {
   grid-template-columns: 1fr 1fr; }
   .mainSucursales #tituloSucursales {
     grid-area: tituloSucursales;
-    margin-left: 5px;
-    color: black;
-    font-family: 'Roboto', sans-serif; }
+    margin-left: 2%;
+    color: black; }
   .mainSucursales .subtituloDistribuidora {
     grid-area: subtituloDistribuidora;
-    font-family: 'Roboto', sans-serif;
     text-align: center; }
   .mainSucursales #mapaDistribuidora {
     grid-area: mapaDistribuidora;
@@ -168,8 +165,7 @@ header {
     margin-right: 10%;
     text-align: center;
     border-top: 1px solid gray;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif; }
+    padding-top: 20px; }
   .mainSucursales #mapaFerreteria {
     grid-area: mapaFerreteria;
     justify-self: start; }
@@ -192,10 +188,13 @@ header {
   /* formulario de contacto */
   /* informacion de contacto */ }
   #mainContacto .tituloContacto {
-    grid-area: tituloContacto; }
+    grid-area: tituloContacto;
+    color: black;
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 30px; }
   #mainContacto .containerFormulario {
     grid-area: formContacto;
-    margin-top: 3%;
     margin-left: 10%;
     padding: 15px 15px;
     background-color: grey;
@@ -235,11 +234,12 @@ header {
     flex-flow: column nowrap;
     justify-content: center;
     margin-left: 30%; }
-    #mainContacto .containerContacto .tituloContacto {
-      margin-top: 5px;
-      margin-bottom: 10px;
+    #mainContacto .containerContacto .tituloInfo {
       font-family: 'Roboto', sans-serif;
-      color: black; }
+      text-align: center;
+      font-size: 30px;
+      color: black;
+      font-weight: bolder; }
     #mainContacto .containerContacto .parrafoContacto {
       margin-bottom: 5px;
       text-align: center;
@@ -420,7 +420,8 @@ footer {
     flex-direction: column;
     align-items: center; }
     .mainEmpresa #imagenEmpresa {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      width: 90%; }
     .mainEmpresa .containerEmpresa {
       width: 70%; }
   /* main sucursales */
@@ -465,7 +466,7 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 600px) {
   /* header */
   header .logo {
-    height: 70px; }
+    height: 78px; }
   /* main index */
   .indexIndicadores {
     display: none; }
@@ -482,7 +483,7 @@ footer {
     align-items: center; }
     .mainEmpresa #imagenEmpresa {
       height: 180px;
-      width: 70%;
+      width: 65%;
       margin-bottom: 15px; }
     .mainEmpresa .containerEmpresa {
       width: 70%; }
