@@ -2,11 +2,6 @@
   border-radius: 10px;
   border: 2px solid black; }
 
-/* reset */
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
   background-color: #C2B8B7; }
 
@@ -338,19 +333,26 @@ header {
 footer {
   grid-area: footer;
   display: flex;
-  justify-content: center;
   margin-top: 100px;
   width: 100%;
   height: 100px;
   background-color: black; }
   footer .pagina {
-    height: 100%;
-    width: 100%; }
-    footer .pagina div p {
-      font-size: 11px;
-      text-align: center;
-      color: whitesmoke;
-      font-family: 'Roboto', sans-serif; }
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif; }
+  footer .containerRedes {
+    width: 21.5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center; }
+    footer .containerRedes img {
+      height: 30px;
+      width: 30px; }
 
 /* MEDIAQUERIES TABLET-NOTEBOOK */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -466,7 +468,7 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 600px) {
   /* header */
   header .logo {
-    height: 78px; }
+    height: 72px; }
   /* main index */
   .indexIndicadores {
     display: none; }
@@ -487,6 +489,8 @@ footer {
       margin-bottom: 15px; }
     .mainEmpresa .containerEmpresa {
       width: 70%; }
+      .mainEmpresa .containerEmpresa .parrafoEmpresa {
+        padding-right: 0px; }
   /* main sucursales */
   .mainSucursales {
     height: auto;
