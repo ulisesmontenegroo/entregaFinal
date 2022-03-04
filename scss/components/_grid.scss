@@ -1,3 +1,6 @@
+body{
+    background-color: $bg;
+}
 /* grid index */
 .gridIndex{
     display: grid;
@@ -15,6 +18,7 @@
     grid-template-areas: "header header"
                          "nav nav"
                          "mainProductos mainProductos"
+                         "sectionCatalogo sectionCatalogo"
                          "footer footer";
 }
 /* grid empresa */

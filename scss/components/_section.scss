@@ -21,3 +21,20 @@
         }
     }
 }
+/* section catalogo */
+.sectionCatalogo{
+    grid-area: sectionCatalogo;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-family: 'Roboto', sans-serif; 
+    }
+    .marcasContainer{
+        width: 70%;
+        .imgMarcas{
+            border-radius: 10px;
+        }
+    }
+}
